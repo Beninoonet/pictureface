@@ -1,9 +1,15 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FaceSnap } from '../models/face-snap';
+import { DatePipe, NgClass, NgStyle, UpperCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-pic-snap',
-  imports: [],
+  imports: [
+    NgStyle,
+    NgClass,
+    UpperCasePipe,
+    DatePipe,
+  ],
   templateUrl: './pic-snap.html',
   styleUrl: './pic-snap.scss',
 })
