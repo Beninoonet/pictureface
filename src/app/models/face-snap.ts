@@ -1,6 +1,7 @@
 export class FaceSnap {
     // optional
     location?: string;
+    id: string;
 
 
     constructor(
@@ -9,7 +10,9 @@ export class FaceSnap {
         public imgUrl: string,
         public createdAt: Date, 
         public snaps: number,
-       ) {}
+       ) {
+        this.id = crypto.randomUUID().substring(0, 8);
+       }
 
     onAddSnap(): void {
         this.snaps++;
