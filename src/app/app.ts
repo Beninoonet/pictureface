@@ -1,13 +1,13 @@
 import { Component,} from '@angular/core';
-import { PicSnapList } from './pic-snap-list/pic-snap-list';
 import { Header } from './header/header';
+import { RouterOutlet } from '@angular/router';
 
 
 @Component({
   selector: 'app-root',
   imports: [
    Header,
-   PicSnapList
+   RouterOutlet
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
